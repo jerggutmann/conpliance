@@ -1,10 +1,10 @@
 :root {
-  --bg: #15110c;
-  --surface: #1c1710;
-  --line: #35291b;
-  --text: #ebe0cf;
-  --muted: #b2a48e;
-  --accent: #e9b44c;
+  --bg: #150f10;
+  --surface: #1d1517;
+  --line: #382a2d;
+  --text: #eadfde;
+  --muted: #b3a0a3;
+  --accent: #ec8a80;
   --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -25,7 +25,7 @@ a:hover, a:focus-visible { border-bottom-color: var(--accent); }
 .muted { color: var(--muted); }
 
 /* Navigation */
-nav { position: sticky; top: 0; z-index: 5; background: rgba(21,17,12,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+nav { position: sticky; top: 0; z-index: 5; background: rgba(21,15,16,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
 nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 3.25rem; }
 nav .brand { font: 600 .95rem var(--sans); letter-spacing: .12em; color: var(--text); border: 0; }
 nav ul { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
