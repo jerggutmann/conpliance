@@ -78,6 +78,32 @@
       <p>Please cite the following article when using any visualizations in publications:</p>
       <p class="muted">Gutmann, J., Metelska-Szaniawska, K., &amp; Voigt, S. (2024). The comparative constitutional compliance database. <em>The Review of International Organizations, 19</em>(1), 95&ndash;115.
         <a class="tag" href="https://doi.org/10.1007/s11558-023-09491-7">DOI</a></p>
+      <details class="program ind">
+        <summary>About the indicators</summary>
+        <h4>Measurement</h4>
+        <p class="small">The indicators measure compliance with national constitutions as the absence of a gap between de jure rules and de facto practice. They cover 14 constitutional rules. Information on whether a rule exists in the constitution (de jure) comes from the Comparative Constitutions Project, information on practice (de facto) from expert ratings of the Varieties of Democracy project (V-Dem, version 12). A rule counts as complied with if it is protected both de jure and de facto and is coded 1. A rule that is guaranteed but not complied with is coded 0. A rule that the constitution does not guarantee is coded 0.5.</p>
+        <h4>Legal areas</h4>
+        <dl>
+          <dt>Property rights and rule of law</dt><dd>private property rights, judicial independence, equality before the law, rule of law</dd>
+          <dt>Political rights</dt><dd>freedom of association, freedom of assembly, right to form parties</dd>
+          <dt>Civil rights</dt><dd>free media, free speech, free movement, religious freedom</dd>
+          <dt>Basic human rights</dt><dd>right to life, freedom from slavery, protection from torture</dd>
+        </dl>
+        <p class="small">Within each area, the rule indicators are aggregated using the first factor of a factor analysis.</p>
+        <h4>Variables</h4>
+        <dl>
+          <dt>cc_total</dt><dd>Overall constitutional compliance: mean of the four area indicators</dd>
+          <dt>cc_prop</dt><dd>Property rights and rule of law</dd>
+          <dt>cc_polit</dt><dd>Political rights</dd>
+          <dt>cc_civil</dt><dd>Civil rights</dd>
+          <dt>cc_basic</dt><dd>Basic human rights</dd>
+          <dt>cc_alt_cp</dt><dd>Civil and political rights combined (alternative indicator)</dd>
+          <dt>cc_*_lv</dt><dd>The same indicators with the coding rule of Law and Versteeg (2013): the share of de jure protected rules that are complied with. Rules that the constitution does not guarantee are treated as missing instead of being coded 0.5. Unlike the main indicators, these ignore how many rules a constitution contains.</dd>
+          <dt>dj_index</dt><dd>De jure index: number of the 14 rules that the constitution guarantees (0&ndash;14)</dd>
+        </dl>
+        <p class="small">All cc_* indicators are standardized to a mean of zero and a standard deviation of one across the entire dataset (1900&ndash;2020). Higher values indicate higher constitutional compliance. For details, see Gutmann, Metelska-Szaniawska, &amp; Voigt (2024) and its online appendix.
+          <a class="tag" href="https://doi.org/10.1007/s11558-023-09491-7">DOI</a></p>
+      </details>
       <noscript><p>This visualization requires JavaScript. The full dataset is available from <a href="https://dataverse.harvard.edu/dataverse/CCCD">Harvard Dataverse</a>.</p></noscript>
     </div>
   </section>
