@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Data Visualization | ECC</title>
+<meta name="description" content="Interactive maps and time trends of the Comparative Constitutional Compliance Database (CCCD).">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="index.html">ECC</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="visualization.html" aria-current="page">Visualization</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="events.html">Events</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="wrap">
+    <p class="kicker">The Economics of Constitutional Compliance</p>
+    <h1>Data Visualization</h1>
+  </div>
+</header>
+
+<main id="main">
+  <section class="plain">
+    <div class="wrap">
+      <p class="intro" style="max-width:46rem">Explore the indicators of the Comparative Constitutional Compliance Database (CCCD) on a world map or as time trends. The charts show today's states only. Variable names are those of the dataset. Hover over the chart for values. You can download the full <a href="data.html">dataset</a>.</p>
+      <p class="version"><strong>Data: CCCD version 2.0</strong> (1900&ndash;2020)</p>
+
+      <div class="viz-bar">
+        <div class="seg" role="group" aria-label="Chart type">
+          <button type="button" data-mode="map" aria-pressed="true">Map</button>
+          <button type="button" data-mode="trend" aria-pressed="false">Time trends</button>
+        </div>
+        <label>Indicator <select id="viz-var"></select></label>
+        <span id="viz-map-ctl" class="viz-grp">
+          <label>Year <input id="viz-year" type="range" step="1"> <output id="viz-year-out"></output></label>
+          <button type="button" id="viz-play" class="btn small">Play</button>
+        </span>
+        <span id="viz-trend-ctl" class="viz-grp" hidden>
+          <label>Countries <select id="viz-add"><option value="">Add a country …</option></select></label>
+        </span>
+        <button type="button" id="viz-download" class="btn small">Download PNG</button>
+      </div>
+      <p id="viz-chips" class="viz-chips" hidden></p>
+
+      <div class="viz-wrap">
+        <canvas id="viz-canvas" role="img" aria-label="Chart"></canvas>
+        <div id="viz-tip" class="viz-tip" hidden></div>
+      </div>
+      <noscript><p>This visualization requires JavaScript. The full dataset is available from <a href="https://dataverse.harvard.edu/dataverse/CCCD">Harvard Dataverse</a>.</p></noscript>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© ECC · University of Hamburg · University of Warsaw</span>
+    <span>Funded by DFG and NCN · <a href="imprint.html">Imprint &amp; Privacy</a></span>
+  </div>
+</footer>
+<script src="viz/viz.js" defer></script>
+</body>
+</html>
