@@ -143,3 +143,5 @@ details.program em { color: var(--text); }
   details.program dl { grid-template-columns: 1fr; gap: 0; }
   details.program dd { margin-bottom: .5rem; }
 }
+
+@media (min-width:600px){.nb{white-space:nowrap}}
