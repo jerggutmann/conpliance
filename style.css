@@ -175,3 +175,22 @@ details.program.ind { margin-top: 2rem; }
 details.program.ind dl { grid-template-columns: 11rem 1fr; }
 details.program.ind p.small { font-size: .9rem; margin: .4rem 0; }
 @media (max-width: 600px) { details.program.ind dl { grid-template-columns: 1fr; } details.program.ind dt { margin-top: .4rem; } }
+
+/* Uniform sizes across pages */
+:root { --measure: 46rem; --ctl-h: 2.5rem; --ctl-fs: .95rem; --pad: 1.25rem; }
+header.hero, header.page { padding-top: 2.5rem; }
+.intro, .card { max-width: var(--measure); }
+section .wrap > :first-child, .card > :first-child, .legal > :first-child { margin-top: 0; }
+.card { padding: var(--pad); }
+.legal h2 { font: 400 1.6rem/1.2 var(--serif); margin: 2.25rem 0 1rem; }
+
+.btn, .btn.small, .seg, .viz-bar select { box-sizing: border-box; height: var(--ctl-h); font-size: var(--ctl-fs); line-height: 1; border-radius: 3px; }
+.btn, .btn.small { display: inline-flex; align-items: center; justify-content: center; padding: 0 1.1rem; font-family: var(--sans); }
+.seg button { height: 100%; padding: 0 1.1rem; font-size: var(--ctl-fs); }
+.viz-bar select { padding: 0 .6rem; }
+.viz-bar label { font-size: var(--ctl-fs); }
+.btns { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+.viz-bar { margin: 1.25rem 0 .75rem; }
+.viz-chips { margin: 0 0 .75rem; }
+h3.sub { margin-top: 1.75rem; }
+.chks { margin: .75rem 0 0; }
